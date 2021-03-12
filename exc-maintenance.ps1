@@ -7,5 +7,5 @@ Set-ServerComponentState $exc –Component ServerWideOffline –State InActive �
 Set-ServerComponentState $exc -Component ServerWideOffline -State Active -Requester Maintenance
 Set-ServerComponentState $exc -Component HubTransport -State Active -Requester Maintenance
 #Get Component State
-Get-ServerComponentState $exc | Select Component, State
+Get-ServerComponentState $exc | Select Component, State | ft -autosize
 
